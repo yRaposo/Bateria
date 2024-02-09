@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Titulo{
+    color: #fff;
+    margin-bottom: 20px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.key{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+.key.active {
+    background: #ffffff73;
+
+     transition: 50ms;
+}
+
+.composer {
+    width: 260px;
+    margin-top: 20px;
+}
+
+.composer #input {
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding: 10px 15px;
+
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.composer button {
+    width: 100%;
+    outline: none;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding-block: 10px;
+    transition: 100ms;
+}
+
+.composer button:hover{
+    background: #ffffff73;
+
+    transition: 100ms;
+}
+
+footer {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 13px;
+}
